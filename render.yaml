@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: om-shahd-salon
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
